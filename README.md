@@ -56,7 +56,7 @@ The sole purpose of this project is to demonstrate the configuration of several 
 
 ## Why?
 
-1. Feign Client?
+1. Feign Client
 
 Feign is a declarative web service client developed by Netflix as part of the Spring Cloud ecosystem. It's commonly used in Spring Boot microservices for simplifying the process of making HTTP requests to other microservices or external APIs.
 
@@ -67,7 +67,7 @@ Feign reduces boilerplate code significantly. You define the API interface with 
 Feign can work in conjunction with service discovery tools like Netflix Eureka or other load balancing mechanisms. This allows it to automatically distribute requests across instances of the same service, enhancing reliability and fault tolerance.
 
 
-2. Consul?
+2. Consul
 
 Consul is a tool developed by HashiCorp that provides service discovery, health checking, key-value storage, and distributed configuration capabilities.
 
@@ -81,7 +81,7 @@ Consul provides a key-value store that can be used to store configuration data. 
 
 Consul helps decouple services from each other by abstracting the location and health of services. This makes it possible to scale, update, or replace services without disrupting the overall system.
 
-3. Resilience4j
+3. Resilience4
 
 Resilience4j is a lightweight and flexible library for implementing resiliency patterns in Java applications, including those built with Spring Boot. It provides tools for dealing with common issues in distributed systems, such as failures, latency, and fault tolerance.
 
@@ -90,4 +90,6 @@ Resilience4j includes a robust implementation of the circuit breaker pattern. A 
 Resilience4j offers configurable retry mechanisms that automatically retry failed operations with customizable policies. This can be especially useful when dealing with transient failures, where a retry might succeed due to temporary issues.
 
 When a service is unavailable or fails, Resilience4j allows you to define fallback strategies, providing a default response or alternative behavior. This ensures that even in the presence of failures, some level of service can still be provided.
+
+4. Zipkin
 
