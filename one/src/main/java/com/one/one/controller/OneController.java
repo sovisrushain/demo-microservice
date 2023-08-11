@@ -32,7 +32,6 @@ public class OneController {
                 .build();
 
         return ResponseEntity.ok(responseDTO);
-
     }
 
     public ResponseEntity<ResponseDTO> fallbackResponse(Exception exception) {
@@ -42,6 +41,5 @@ public class OneController {
                 .build();
 
         return ResponseEntity.ok(responseDTO);
-
     }
 }

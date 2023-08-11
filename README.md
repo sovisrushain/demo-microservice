@@ -33,7 +33,7 @@ The sole purpose of this project is to demonstrate the configuration of several 
 
 **consul ui:**
 
-[http://localhost:8500/ui/dc1/services](consul server ui)
+http://localhost:8500/ui/dc1/services
 
 
 ## Deal with Zipkin
@@ -48,7 +48,7 @@ The sole purpose of this project is to demonstrate the configuration of several 
 
 **zipkin ui**
 
-[http://localhost:9411/zipkin/](zipkin server ui)
+http://localhost:9411/zipkin/
 
 
 
