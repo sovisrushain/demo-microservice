@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/two")
 public class TwoController {
 
+    private static final Integer INT_VALUE = 8;
+
     @GetMapping
     public ResponseEntity<ResponseDTO> getResource() {
         var res = ResponseDTO.builder()
                 .statusCode("200")
-                .response(10)
+                .response(INT_VALUE)
                 .build();
         return ResponseEntity.ok(res);
     }
