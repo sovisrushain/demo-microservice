@@ -1,0 +1,26 @@
+version: '3'
+services:
+  consul:
+    image: hashicorp/consul
+    container_name: consul
+    ports:
+      - "8500:8500"
+      - "8600:8600/udp"
+    command: "agent -dev -client=0.0.0.0"
+    networks:
+      - consul_net
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - zipkin_net
+
+networks:
+  consul_net:
+    driver: bridge
+
+  zipkin_net:
+    driver: bridge
