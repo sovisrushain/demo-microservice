@@ -71,7 +71,7 @@ Consul provides a key-value store that can be used to store configuration data. 
 
 Consul helps decouple services from each other by abstracting the location and health of services. This makes it possible to scale, update, or replace services without disrupting the overall system.
 
-3. Resilience4
+3. Resilience4j
 
 Resilience4j is a lightweight and flexible library for implementing resiliency patterns in Java applications, including those built with Spring Boot. It provides tools for dealing with common issues in distributed systems, such as failures, latency, and fault tolerance.
 
