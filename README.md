@@ -14,7 +14,7 @@ The sole purpose of this project is to demonstrate the configuration of several 
 ## Getting start
 - Clone the project
 - checkout to a new branch
-- Spin up both Consul & Zipkin services using docker (assistance provided below)
+- Spin up both Consul & Zipkin services using docker (docker compose up -d)
 - Spin up three services (Spring boot apps)
 - fire a postman request
   http://localhost:8081/one
@@ -27,10 +27,6 @@ The sole purpose of this project is to demonstrate the configuration of several 
 
 `docker pull hashicorp/consul`
 
-**spin up container:**
-
-`docker run -d -p 8500:8500 hashicorp/consul`
-
 **consul ui:**
 
 http://localhost:8500/ui/dc1/services
@@ -42,15 +38,9 @@ http://localhost:8500/ui/dc1/services
 
 `docker pull openzipkin/zipkin`
 
-**spin up zipkin container**
-
-`docker run -d -p 9411:9411 openzipkin/zipkin`
-
 **zipkin ui**
 
 http://localhost:9411/zipkin/
-
-
 
 
 
